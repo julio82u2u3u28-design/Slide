@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #0d0f17;
+html, body {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .slider-wrapper {
@@ -23,7 +25,7 @@ body {
   appearance: none;
   width: 100%;
   height: 8px;
-  background: #ffffff; /* Barra branca */
+  background: #e0e0e0; /* Barra cinza clara para aparecer no fundo branco */
   border-radius: 20px;
   outline: none;
   cursor: pointer;
@@ -38,8 +40,7 @@ body {
   border-radius: 50%;
   background-color: #000000; /* Bolinha preta */
   cursor: pointer;
-  border: 2px solid #ffffff; /* Borda branca fina para dar destaque */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.1s ease;
 }
 
@@ -54,5 +55,6 @@ body {
   border-radius: 50%;
   background-color: #000000; /* Bolinha preta */
   cursor: pointer;
-  border: 2px solid #ffffff;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
